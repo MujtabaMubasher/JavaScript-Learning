@@ -10,7 +10,6 @@ let mujtaba;
 /* Prefer not to use var
    because of issue in block scope and functional scope
 */
-
 emailId="kddnkns@dnkdn.com"
 city="islamabad"
 country="India"
