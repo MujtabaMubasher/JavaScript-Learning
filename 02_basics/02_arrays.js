@@ -40,7 +40,7 @@ let score = 10000000000
 // console.log(Array.from(anOtherArr));
 // console.log(Array.from(score));
 // console.log(Array.from("Mujtaba"));
-// console.log(Array.from({name:"Mujtaba"}));
+// console.log(Array.from({name:"Mujtaba"})); // => Interesting
 
 }
 /*________________________________________________*/
