@@ -31,7 +31,7 @@ map1.set("Ending Year:" , 2024)
 
 
 for (const i of map1) {
-    //console.log(i);        //=> it gives us an Array of Each 'Key:Value' pairs
+    //console.log(i);        //=> it gives us an Array of Each 'Key:Value' pairs of Map()
 }
 
                             //OR
