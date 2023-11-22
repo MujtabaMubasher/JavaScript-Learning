@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Learning Dom</title>
+</head>
+
+<style>
+
+ .bg-black {
+
+    background-color: #121212;
+    color: white;
+ }
+
+</style>
+<body class="bg-black">
+ <div >
+    <h1 id = "title" class="Heading">Dom Learning on Cha or code<span style ="display: none;"> Test Text </span></h1>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+    <p>Lorem ipsum dolor sit </p>
+    <input type="password" name="" id="">
+    <ul>
+      <li class = "list-items">one</li>
+      <li class = "list-items">two</li>
+      <li class = "list-items">three</li>
+      <li class = "list-items" >four</li>
+      <li class = "list-items">five</li>
+
+
+    </ul>
+ </div>
+</body>
+</html>
+
+<script>
+
+console.log(window);
+console.log(window.document);
+console.log(document);
+console.dir(document)
+
+document.getElementById('title')
+document.getElementById('title').id
+document.getElementById('title').class // => Return Undefined 
+document.getElementById('title').className
+document.getElementById('title').getAttribute("id")
+document.getElementById('title').getAttribute("class")
+document.getElementById("title").setAttribute("class", "Test") // => Always Overright Current Attribute
+document.getElementById("title").setAttribute("class", "Test Heading") // => Always Overright Current Attribute
+
+
+/*-------------------------------------------------------------------------------------------*/
+
+const title = document.getElementById("title")
+//title.style.backgroundColor = "green"
+title.style.padding = "15px"
+title.style.borderRadius = "15px"
+
+/*-------------------------------------------------------------------------------------------*/
+
+title.innerText
+title.textContent // => Display All the Hidden Text
+title.innerHTML   // Give all HTML tags in Text
+/*-------------------------------------------------------------------------------------------*/
+
+
+document.querySelector('h2')
+document.querySelector("#title")
+document.querySelector(".Heading")
+document.querySelector('input[type="password"]')
+const myUl = document.querySelector("ul")
+const myLi = myUl.querySelector('li')
+//myLi.style.backgroundColor="Green"
+//myLi.style.padding="100px"
+myLi.innerText = "Ten"
+
+/*-------------------------------------------------------------------------------------------*/
+
+document.querySelectorAll('li') // => This will Return NodeList
+const tempLiList = document.querySelectorAll('li')
+//tempLiList.style.color = "green" // => This will Return Error
+tempLiList[0].style.color = "green"
+tempLiList.forEach((i)=>{
+
+i.style.color = "Yellow"
+})
+
+/*-------------------------------------------------------------------------------------------*/
+
+document.getElementsByClassName('list-items') // => This Return the HTML Collection
+const tempClassList = document.getElementsByClassName('list-items')
+const myConvertedArr = Array.from(tempClassList) // => HTML Collection in to Array
+console.log(myConvertedArr)
+myConvertedArr.forEach((li)=>{
+    li.style.color = 'blue'
+})
+
+
+
+
+</script>
