@@ -144,7 +144,7 @@ async function getAllUser(){
 /*___________________________________________________________________________ */
 
 
-const response = fetch('https://api.github.com/users/hiteshchoudhary')
+ fetch('https://api.github.com/users/hiteshchoudhary')
 .then((response)=>{
 
     return response.json()
