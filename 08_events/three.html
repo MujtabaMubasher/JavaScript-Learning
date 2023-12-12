@@ -15,7 +15,8 @@
 <script>
     
     const sayDate = function (){
-        console.log(Date.now());
+        let myDate = new Date()
+        console.log(myDate.toLocaleTimeString());
     }
 
     let interval = setInterval(sayDate,2000)
